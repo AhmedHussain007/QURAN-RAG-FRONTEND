@@ -61,7 +61,7 @@ with col2:
 
     hadith_text = st.text_area("Hadith Text", height=150, key="hadith_llm_input")
 
-    if st.button("Get Narrators Only (LLM)", key="get_narrators_only"):
+    if st.button("Get Narrators Only", key="get_narrators_only"):
         if not hadith_text.strip():
             st.warning("Please enter a hadith text.")
         else:
@@ -78,7 +78,7 @@ with col2:
             except Exception as e:
                 st.error(f"Failed to connect to backend: {e}")
 
-    if st.button("Get Hadith Content Only (LLM)", key="get_hadith_only"):
+    if st.button("Get Hadith Content Only", key="get_hadith_only"):
         if not hadith_text.strip():
             st.warning("Please enter a hadith text.")
         else:
@@ -95,7 +95,7 @@ with col2:
             except Exception as e:
                 st.error(f"Failed to connect to backend: {e}")
 
-    if st.button("Get Both Hadith & Narrators (LLM)", key="get_both"):
+    if st.button("Get Both Hadith & Narrators", key="get_both"):
         if not hadith_text.strip():
             st.warning("Please enter a hadith text.")
         else:
