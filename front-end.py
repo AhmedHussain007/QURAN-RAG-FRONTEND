@@ -2,7 +2,7 @@ import streamlit as st
 import requests
 
 # Define base URL
-BASE_URL = "https://quran-rag-production.up.railway.app"
+BASE_URL = "https://quran-rag-backend-production.up.railway.app/"
 # Create two columns for the grid layout
 col1, col2 = st.columns(2)
 
